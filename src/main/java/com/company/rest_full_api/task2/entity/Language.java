@@ -19,4 +19,9 @@ public class Language {
     private String name;
     @ManyToMany
     private List<Category> categories;
+
+    public Language(String name, List<Category> categories) {
+        this.name = name;
+        this.categories = categories;
+    }
 }
